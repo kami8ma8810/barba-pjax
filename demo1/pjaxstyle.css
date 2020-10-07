@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+p {
+  margin: 10px;
+}
+
+#main {
+  background: #E5D8FF;
+  text-align: center;
+  padding: 20px;
+}
+
+#main h2 {
+  color: #fff;
+  border-top: none;
+  font-size: 40px;
+}
+
+/*ボタン*/
+.button a {
+  font-size: 18px;
+  display: inline-block;
+  background: #7451D7;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  -moz-box-shadow: 2px 3px 5px #7f69be;
+  -webkit-box-shadow: 2px 3px 5px #7f69be;
+  box-shadow: 2px 3px 5px #7f69be;
+}
+
+.button a:hover {
+  background: #9577eb;
+}
+
+/*表示アニメーションCSS*/
+#main {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}

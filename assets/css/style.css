@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+/* Custom base styles
+   ========================================================================== */
+
+/* default
+   -------------------------------------------------------------------------- */
+html{
+  overflow-y: scroll;
+  height: 100%;
+}
+body{
+  background: #fafafa;
+  height: 100%;
+}
+html body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a{
+  color: #12c;
+}
+a:visited{
+  color: #609
+}
+p,
+li,
+th,
+td {
+  font-size: medium;
+}
+ul {
+  padding-left: 25px;
+}
+table {
+  margin: 1.0em 0 2.0em;
+}
+thead {
+  font-weight: bold;
+  vertical-align: baseline;
+}
+tbody {
+  vertical-align: baseline;
+}
+th {
+  padding: .5em;
+  padding-right: 1.0em;
+  border: solid 0 #aaa;
+}
+td {
+  padding: .5em;
+  padding-right: 1.0em;
+  border: solid 1px #aaa;
+  border-width: 1px 0;
+}
+
+
+/* readability
+   -------------------------------------------------------------------------- */
+h1,
+h1 a,
+h1 a:visited{
+  color: #444;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+p,
+blockquote,
+figcaption,
+ul,
+ol,
+dl,
+th,
+td,
+input,
+textarea{
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 0.10em;
+}
+
+
+/* frame
+   -------------------------------------------------------------------------- */
+
+/* header
+   -------------------------------------------------------------------------- */
+#header h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+}
+#header h1 a,
+#header h1 a:visited{
+  color: #222;
+  text-decoration: none;
+}
+#header a,
+#header a:visited{
+  color: #fff;
+}
+
+/* footer
+   -------------------------------------------------------------------------- */
+#footer {
+  min-height: 100px;
+}
+
+/* primary
+   -------------------------------------------------------------------------- */
+
+/* secondary
+   -------------------------------------------------------------------------- */
+#secondary {
+  padding-top: 30px;
+  padding-left: 0;
+}
+#secondary ul ul {
+  margin-left: 1.0em;
+}
+
+/* tertiary
+   -------------------------------------------------------------------------- */
+
+
+/* Custom specific styles
+   ========================================================================== */
+
+/* [style]
+   -------------------------------------------------------------------------- */
+.style-top #content .col-md-4 p {
+  font-size: 14px;
+}
+.style-top #content .row {
+  min-height: 15em;
+}
+.style-info #content h2 {
+  margin-top: 2.0em;
+}
+.style-info #content h3 {
+  margin-top: 2.0em;
+}
+.style-info #content h4 {
+  margin-top: 2.0em;
+}
+.style-info #content h5 {
+  margin-top: 2.0em;
+}
+.style-info #content h6 {
+  margin-top: 2.0em;
+}
+.style-info #content p {
+  margin-top: 1.0em;
+  margin-bottom: 2.0em;
+}
+.style-api #content h2 {
+  font-size: x-large;
+}
+.style-api #content h3 {
+  font-size: large;
+}
+.style-api #content h4 {
+  font-size: medium;
+}
+.style-api-detail #content h2 {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+.style-api-detail #content h3 {
+  margin-bottom: .5em;
+}
+.style-api-detail #content h4 {
+  margin-bottom: .5em;
+}
+
+/* [page]
+   -------------------------------------------------------------------------- */
+
+/* [fragment]
+   -------------------------------------------------------------------------- */
+#billboard {
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0 200px 0;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+#billboard h2 {
+  font-size: 48px;
+  letter-spacing: 0.15em;
+}
+a.btn,
+a.btn:visited{
+  color: #fff;
+}
+.overlay {
+  display: none;
+  overflow: auto;
+  max-width: 600px;
+  min-width: 15%;
+  max-height: 80%;
+  min-height: 30%;
+  margin: auto;
+  padding: 2em;
+  border: none;
+  background: #fff;
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
+}
+
+/* effect
+   -------------------------------------------------------------------------- */
+
+.radius{
+  border-radius: 5px;
+}
+.shadow{
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* option
+   -------------------------------------------------------------------------- */
+
+.bold{
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+.underline{
+  text-decoration: underline;
+}
+.syntaxhighlighter{
+  margin: .5em 0 1.0em 0 !important;
+}
+
+
+/* css3 boxlayout
+   -------------------------------------------------------------------------- */
+.boxlayout {
+  width: 100%;
+  display: box;
+  box-orient: horizontal;
+}
+
+
+/* Column layout
+   ========================================================================== */
+/* 1 column layout 010
+   -------------------------------------------------------------------------- */
+.layout-010 #layout{
+  margin-left: 0;
+  margin-right: 0;
+}
+.layout-010 #secondary{
+  display: none;
+}
+.layout-010 #tertiary{
+  display: none;
+}
+
+/* 2 column layout 012
+   -------------------------------------------------------------------------- */
+.layout-012 #layout{
+  margin-left: 0;
+  margin-right: 200px;
+}
+.layout-012 #secondary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+.layout-012 #tertiary{
+  display: none;
+}
+
+/* 2 column layout 013
+   -------------------------------------------------------------------------- */
+.layout-013 #layout{
+  margin-left: 0;
+  margin-right: 200px;
+}
+.layout-013 #secondary{
+  display: none;
+}
+.layout-013 #tertiary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+
+/* 2 column layout 210
+   -------------------------------------------------------------------------- */
+.layout-210 #layout{
+  margin-left: 200px;
+  margin-right: 0;
+}
+.layout-210 #secondary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+.layout-210 #tertiary{
+  display: none;
+}
+
+/* 2 column layout 310
+   -------------------------------------------------------------------------- */
+.layout-310 #layout{
+  margin-left: 200px;
+  margin-right: 0;
+}
+.layout-310 #secondary{
+  display: none;
+}
+.layout-310 #tertiary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+
+/* 3 column layout 123
+   -------------------------------------------------------------------------- */
+.layout-123 #layout{
+  margin-left: 0;
+  margin-right: 400px;
+}
+.layout-123 #secondary{
+  display: block;
+  margin-left: -400px;
+  width: 200px;
+}
+.layout-123 #tertiary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+
+/* 3 column layout 132
+   -------------------------------------------------------------------------- */
+.layout-132 #layout{
+  margin-left: 0;
+  margin-right: 400px;
+}
+.layout-132 #secondary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+.layout-132 #tertiary{
+  display: block;
+  margin-left: -400px;
+  width: 200px;
+}
+
+/* 3 column layout 213
+   -------------------------------------------------------------------------- */
+.layout-213 #layout{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.layout-213 #secondary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+.layout-213 #tertiary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+
+/* 3 column layout 312
+   -------------------------------------------------------------------------- */
+.layout-312 #layout{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.layout-312 #secondary{
+  display: block;
+  margin-left: -200px;
+  width: 200px;
+}
+.layout-312 #tertiary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+
+
+/* 3 column layout 231
+   -------------------------------------------------------------------------- */
+.layout-231 #layout{
+  margin-left: 400px;
+  margin-right: 0;
+}
+.layout-231 #secondary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+.layout-231 #tertiary{
+  display: block;
+  margin-left: -100%;
+  padding-left: 200px;
+  width: 200px;
+}
+
+/* 3 column layout 321
+   -------------------------------------------------------------------------- */
+.layout-321 #layout{
+  margin-left: 400px;
+  margin-right: 0;
+}
+.layout-321 #secondary{
+  display: block;
+  margin-left: -100%;
+  padding-left: 200px;
+  width: 200px;
+}
+.layout-321 #tertiary{
+  display: block;
+  margin-left: -100%;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
