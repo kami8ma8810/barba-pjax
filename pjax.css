@@ -1,29 +1,35 @@
-body{
+body {
     font-size: 200%;
 }
-*{
+
+* {
     box-sizing: border-box;
     vertical-align: center;
     margin: 0;
 }
+
 .header {
     background: gainsboro;
     height: 100px;
     margin-bottom: 10px;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
 }
-.main{
+
+.main {
     width: 80%;
     margin-right: 5px;
 }
-.page1  {
+
+.page1 {
     background: pink;
     height: 600px;
 }
+
 .page2 {
     background: paleturquoise;
     height: 600px;
@@ -40,16 +46,26 @@ body{
     height: 80px;
 }
 
-.control-panel{
+.control-panel {
     border: black 1px solid;
     margin: 10px;
     padding: 3px;
 
 }
 
-.control-panel-inner{
+.control-panel-inner {
     display: flex;
     flex-direction: row;
     font-size: 75%;
     padding: 5px 0;
+}
+
+.barba-container.fadein {
+    animation: moveFromLeftFade .6s ease;
+}
+
+@keyframes moveFromLeftFade {
+    from {
+        transform: translateX(-100%);
+    }
 }

@@ -1,0 +1,31 @@
+body {
+  background-color: #fffaf5;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+.text {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .screen {
+    color: crimson;
+  }
+}
+
+@media print and (max-width: 1000px) {
+  .print {
+    color: crimson;
+  }
+}
+
+@media print,
+screen and (max-width: 1000px) {
+  .screen.print {
+    color: crimson;
+  }
+}

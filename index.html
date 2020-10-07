@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@mediaの指定について in 2020</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>@mediaの指定について in 2020</h1>
+  <section>
+    <h2>はじめに</h2>
+    <p>普段、メディアクエリの指定は@mediaのみなのですが、師匠のコードを見て勉強していたら見慣れているscreenの他に、printも指定していることが分かりました。</p>
+    <p>printはその名の通り、プリンターで印刷する場合での指定となります。</p>
+    <p>そこで@media screenとprintでどのような動きになるのかまとめてみました。</p>
+  </section>
+  <section>
+    <h2>@media screen指定の場合</h2>
+    <p class="text screen">この文章は@media screen and
+      (max-width:1000px)で赤くなるようにCSS指定しています。
+    </p>
+  </section>
+  <section>
+    <h2>@media print指定の場合</h2>
+    <p class="text print">この文章は@media print and (max-width:1000px)で赤くなるようにCSS指定しています。
+    </p>
+  </section>
+  <section>
+    <h2>@media print,screen指定の場合</h2>
+    <p class="text screen print">この文章は@media print,screen and
+      (max-width:1000px)で赤くなるようにCSS指定しています。
+    </p>
+  </section>
+  <h2>まとめ</h2>
+  <p>スマホから印刷する機会は少ないので、print指定はタブレットまたはパソコンサイズでのみ指定すればよいのではないかと思いました。</p>
+</body>
+
+</html>
